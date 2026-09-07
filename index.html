@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MyLabRanges helps adults compare blood test results with the reference ranges on their laboratory report, or use suggested adult ranges when none are provided." />
+  <title>MyLabRanges | Understand your blood test results</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container hero">
+      <p class="eyebrow">MyLabRanges</p>
+      <h1>Understand your blood test results</h1>
+      <p class="hero-copy">
+        Enter your laboratory results below to compare them with the reference range on your report.
+        If your report does not provide a range, you can use a suggested adult reference range.
+      </p>
+
+      <div class="notice" role="note">
+        <strong>For adults aged 18+ who are not pregnant.</strong>
+        <span>This tool is for general information only and does not diagnose medical conditions. Reference ranges can vary between laboratories.</span>
+      </div>
+
+      <section class="profile-card" aria-labelledby="your-details-heading">
+        <div>
+          <h2 id="your-details-heading">Your details</h2>
+          <p>These are used only to select the appropriate suggested reference range where needed.</p>
+        </div>
+        <div class="profile-controls">
+          <label class="field compact-field">
+            <span>Age</span>
+            <input id="age" type="number" min="0" max="120" inputmode="numeric" placeholder="e.g. 50" />
+          </label>
+
+          <fieldset class="sex-selector">
+            <legend>Sex used for reference ranges</legend>
+            <label><input type="radio" name="sex" value="male" /> Male</label>
+            <label><input type="radio" name="sex" value="female" /> Female</label>
+          </fieldset>
+        </div>
+        <p id="age-message" class="inline-message" aria-live="polite"></p>
+      </section>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="section-heading">
+      <div>
+        <p class="eyebrow">20 common tests</p>
+        <h2>Choose a blood test panel</h2>
+      </div>
+      <p>You only need to enter the results you have. Open any panel below and leave the others blank.</p>
+    </section>
+
+    <div id="panels" class="panels"></div>
+
+    <section id="summary-section" class="summary-section" hidden>
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">Summary</p>
+          <h2>Your results</h2>
+        </div>
+        <button id="clear-results" class="secondary-button" type="button">Clear all results</button>
+      </div>
+      <div id="summary-stats" class="summary-stats"></div>
+      <div id="summary-list" class="summary-list"></div>
+    </section>
+
+    <section class="privacy-card">
+      <div>
+        <p class="eyebrow">Privacy</p>
+        <h2>Your values stay on this device</h2>
+      </div>
+      <p>MyLabRanges processes the values you enter entirely in your browser. It does not upload or store your blood test values.</p>
+    </section>
+
+    <footer>
+      <p class="footer-brand"><strong>MyLabRanges</strong> · Understand your blood test results</p>
+      <p><strong>Important:</strong> This tool is for general information only. A result outside a reference range does not by itself diagnose a medical condition. Discuss unexpected or concerning results with an appropriate healthcare professional.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
