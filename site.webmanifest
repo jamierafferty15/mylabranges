@@ -1,0 +1,21 @@
+{
+  "name": "MyLabRanges",
+  "short_name": "MyLabRanges",
+  "description": "Compare blood test results with your laboratory reference ranges or suggested adult ranges.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7f8",
+  "theme_color": "#17675d",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
