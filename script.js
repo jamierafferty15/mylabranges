@@ -240,7 +240,7 @@ function testInputMarkup(test) {
 
 function renderPanels() {
   panelsContainer.innerHTML = PANELS.map((panel, index) => `
-    <details class="panel panel-${panel.id}" ${index === 0 ? 'open' : ''}>
+    <details class="panel panel-${panel.id}">
       <summary>
         <div class="panel-summary-main">
           <span class="panel-icon" aria-hidden="true">${panelIcon(panel.iconKey)}</span>
